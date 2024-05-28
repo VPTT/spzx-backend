@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namesapce对应 mapper接口的全限定符-->
+<mapper namespace="com.ptt.spzx.manager.mapper.ProductDetailsMapper">
+    <insert id="save" >
+        insert into `product_details`(`product_id`,`image_urls`) values (#{id},#{imageUrls})
+    </insert>
+    <update id="updateById">
+        update product_details SET
+        <if test="imageUrls != null and imageUrls != ''">
+            image_urls = #{imageUrls},
+        </if>
+        update_time =  now()
+        where
+        product_id = #{id}
+    </update>
+    <update id="deleteByProductId">
+        update product_details set
+        update_time = now() ,
+        is_deleted = 1
+        where
+        product_id = #{productId}
+    </update>
+
+
+</mapper>

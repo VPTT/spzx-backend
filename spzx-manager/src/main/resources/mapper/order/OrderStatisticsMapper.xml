@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namesapce对应 mapper接口的全限定符-->
+<mapper namespace="com.ptt.spzx.manager.mapper.OrderStatisticsMapper">
+    <resultMap id="OrderStaticMap" type="com.ptt.spzx.model.entity.order.OrderStatistics" autoMapping="true"/>
+    <sql id="columns">
+        id,order_date,total_amount,total_num,create_time,update_time,is_deleted
+    </sql>
+    <insert id="insert">
+        insert into order_statistics (
+        id,
+        order_date,
+        total_amount,
+        total_num
+        ) values (
+        #{id},
+        #{orderDate},
+        #{totalAmount},
+        #{totalNum}
+        )
+    </insert>
+    
+    <select id="selectByDate" resultMap="OrderStaticMap">
+        SELECT <include refid="columns"/> from order_statistics
+        <where>
+            <if test="createTimeBegin != null and createTimeBegin != ''">
+                order_date >= #{createTimeBegin}
+            </if>
+            <if test="createTimeEnd != null and createTimeEnd != ''">
+                and order_date &lt;= #{createTimeEnd}
+            </if>
+        </where>
+        order by order_date
+
+    </select>
+
+</mapper>

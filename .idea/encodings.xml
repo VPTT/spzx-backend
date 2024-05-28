@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/spzx-common/common-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-common/common-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-common/common-util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-manager/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-server-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-service-client/service-cart-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-service-client/service-cart-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-service-client/service-carts-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-service-client/service-order-cilent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-service-client/service-product-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-service-client/service-user-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-service-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx-service-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx_service/service-car/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx_service/service-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx_service/service-pay/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx_service/service-product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx_service/service-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spzx_service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

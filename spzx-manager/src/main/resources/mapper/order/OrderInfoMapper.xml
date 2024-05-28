@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namesapce对应 mapper接口的全限定符-->
+<mapper namespace="com.ptt.spzx.manager.mapper.OrderInfoMapper">
+    <select id="selectOrderStatistics" resultType="com.ptt.spzx.model.entity.order.OrderStatistics">
+        select Date_forMat(create_time,'%Y-%m-%d') order_date,SUM(total_amount) total_amount,count(id) total_num
+        from order_info where Date_forMat(create_time,'%Y-%m-%d')=#{createTime}
+        group by Date_forMat(create_time,'%Y-%m-%d')
+    </select>
+</mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namesapce对应 mapper接口的全限定符-->
+<mapper namespace="com.ptt.spzx.manager.mapper.SysRoleUserMapper">
+    <delete id="deleteByUserId">
+        DELETE FROM sys_user_role WHERE user_id=#{id}
+    </delete>
+    <insert id="insert">
+        INSERT INTO sys_user_role(role_id,user_id) VALUES (#{roleId},#{userId})
+
+    </insert>
+    <select id="findByUserId" resultType="long">
+        SELECT role_id FROM sys_user_role where user_id=#{userId}
+    </select>
+</mapper>
